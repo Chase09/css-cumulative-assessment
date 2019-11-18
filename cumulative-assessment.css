@@ -1,0 +1,48 @@
+﻿body {
+    background: #E55D87; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5FC3E4, #E55D87); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    line-height: 140%;/* This sets the height of a line to 140% of the screen*/
+    background-size: 100%,auto;
+}
+
+#nav {   
+    background-color: black;/*This sets the background color to black*/
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Sets the navbar to the top of the screen */
+    left: 0;/* Sets the navbar to the very left of the screen*/
+    width: 100%; /* Sets the width of the navbar to the full width of the window */
+    display: flex;
+    justify-content: center;/*This makes it so all of the content is in the center of the navbar*/
+}
+
+    #nav a {
+        float: left;/*This makes it so all of the anchors in the nav will float left*/
+        color: white;/*This changes the font color to white*/
+        text-align: center;/*This aligns the text to the center*/
+        padding: 14px 16px;
+        text-decoration: none;/*This makes it so there is no text decoration*/
+        font-size: 32px;/*This sets the font size to 32 pixels*/
+    }
+
+        #nav a:hover {/*This makes it so when you hover on the links on the navbar it will change the text color and create a white border at the bottom*/
+            color: #0094ff;
+            border-bottom: 3px white solid;
+        }
+
+        #nav a.active {/*When you are on a webpage the color for the webpage on the navbar will be blue with a white border at the bottom*/
+            color: #0094ff;
+            border-bottom: 3px white solid;
+        }
+
+
+
+header {
+    width: 100%;/*This creates a width 100% of the screen*/
+    height: 50px;/*This makes the height 50 pixels*/
+    font-family: Arial, Helvetica, sans-serif;/*This makes the font a sans-serif font*/
+    color: black;/*This makes the text color black*/
+    font-size: 24px;/*This makes the font size 24 pixels*/
+    margin-top: 80px;/*This makes the margin from the top 80 pixels*/
+    text-align: center;/*Thhis makes the text align in the center*/
+}

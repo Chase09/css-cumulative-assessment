@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<!--
+  Name: Chase
+  Course: Software Development 20S
+  Teacher: Mr.Hardman
+  School: PTEC
+  Date Last Modified:11/17/19
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="D:\webdevelopment\css-cumulative-assessment\cumulative-assessment.css" />
+    <meta charset="utf-8" />
+    <title>CSS Cumulative Assessment</title>
+</head>
+<body>
+    <style>
+        .start { /*This creates a white rectangular box that has rounded corners*/
+            border: 2px solid black;
+            background-color: white;
+            width: 1140px;
+            height: 450px;
+            margin-top: 0px;
+            margin-left: 100px;
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+
+        #startPara { /*This sets my font, font size and aligning text for my paragraph*/
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 30px;
+            margin-left: 30px;
+            margin-top: 20px;
+            text-align: justify;
+        }
+
+        #startPara2 { /*This sets my font, font size and aligning text for my paragraph*/
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 60px;
+            margin-left: 380px;
+            margin-top: -200px;
+            height: 230px;
+            text-align: justify;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+
+        .flip-card-front {
+            background-color: white;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: dodgerblue;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        #comment { /*This is the width and height for my comment box*/
+            width: 400px;
+            height: 50px;
+        }
+
+        #button { /*This is how I set the background color, color of text, width , height, radius and font size for my button*/
+            left: 59%;
+            top: 59%;
+            width: 130px;
+            height: 35px;
+            border-radius: 10px;
+            background-color: #0094ff;
+            border: 0.5px solid black;
+            color: white;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+
+
+            #button:hover { /*This makes it so when you hover over my button it changes the cursor to pointer mode*/
+                cursor: pointer;
+            }
+    </style>
+    <div id="nav">
+        <!--This is my nav bar that I used by making a div and putting anchors with links inside of it-->
+        <a class="active" href="D:\webdevelopment\css-cumulative-assessment\2nd-cumulative-assessment.html">Home</a>
+        <a href="D:\webdevelopment\css-cumulative-assessment\projects.html">Projects</a>
+        <a href="D:\webdevelopment\css-cumulative-assessment\resumé.html">Resumé</a>
+    </div>
+    <header>
+        <h1><b>Cumulative Assessment</b></h1><!--This is a heading that displays Cumulative Assessment-->
+    </header>
+    <main class="start">
+        <p id="startPara">
+            <!--This is a paragraph that includes information about myself-->
+            Hi my name is Chase Doyle, I have been a student attending a school known as PTEC (Pembina Trails Early College)
+            for the past year and a couple months. This program started september 4th 2018, not very many people knew about it
+            at the time, since not many people knew about it, not many people joined. I was lucky to have known about it and
+            to get this experience that not many people would have the oprotunity to do normally. Some things I have learned from
+            PTEC are, creating games using java, creating websites using HTML, home networking and IT essentials. I have also
+            learned ethical skills in the work space and have practiced doing an interview with my teacher to prepare myself for the
+            future in the work force. If you would like to see what I have worked on from PTEC click on the projects tab on the navigation
+            bar.
+        </p>
+        <div style="margin-left:20px" class="flip-card">
+            <!--This is the code that uses the flip card codes from my stylesheet so it can work-->
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="http://www.hotavatars.com/wp-content/uploads/2019/01/I80W1Q0.png" alt="Avatar" style="width:180px;height:198px;">
+                </div>
+                <div class="flip-card-back">
+                    <!--This is the information on the back of the flip card-->
+                    <h1>Chase Doyle</h1>
+                    <p>PTEC Student</p>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+        </div>
+        <div id="startPara2">
+            <p>
+                <!--This is a paragraph that displays how to contact me-->
+                Contact:
+                If you ever want to contact me it would be best to use my email, <u>superchase@outlook.com</u>. If you want me to
+                add something to my website just fill out a comment down below.
+            </p>
+            <p><label for="comments">Comments:</label></p><!--This creates a comment box-->
+            <textarea rows="4" cols="40" name="comments" id="comments"></textarea>
+            <button id="button">Submit</button>
+        </div>
+
+    </main>
+
+</body>
+</html>
